@@ -1,0 +1,636 @@
+:root{
+    --blue-color: #3C4350;
+    --blue-light-color: #E5F1FF;
+    --white-color: #FFFFFF;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    color: var(--blue-color);
+}
+
+a{
+    color: var(--blue-color);
+    text-decoration: none;
+}
+
+.container{
+    max-width: 1300px;
+    margin: 0 auto;
+}
+
+.menu{
+    display: flex;
+    flex-direction: column;
+    margin-top: 50px;
+}
+
+/*-------------------------*/
+
+header{
+    font-family: "Montserrat", sans-serif;
+}
+
+
+.header{
+    background-color: var(--blue-color);
+    color: var(--white-color);
+    padding: 10px 0;
+    display: fixed;
+    /* position: fixed; */
+}
+
+.header-logo{
+    border-right: 1px solid var(--white-color);
+}
+
+.header-title{
+    font-family: "Montserrat", sans-serif;
+    color: var(--white-color);
+    font-size: 24px;
+}
+
+.header-name{
+    font-family: "Montserrat", sans-serif;
+    color: var(--white-color);
+}
+
+.header-logo img{
+    margin-right: 10px;
+}
+
+.header-up{
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+    justify-content: space-between;
+}
+
+.header-header{
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.header-title{
+    margin-left: 10px;
+}
+
+.header-down{
+    padding: 15px 0 10px 0;
+}
+
+.header-enter{
+    border: 1px solid var(--white-color);
+    padding: 10px;
+    border-radius: 10px;
+}
+
+
+/*  ---  MAIN.PAIGE ---  */
+
+.main-title{
+    margin-bottom: 30px;
+}
+
+.main{
+    padding: 30px 0;
+    background-color: var(--blue-light-color);
+    height: 75vh;
+}
+
+.main-items{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.main-item{
+    width: 400px;
+    margin-right: 30px;
+    margin-bottom: 30px;
+}
+
+/* ---- один конкретный элемент ----  */
+
+.main-item_title{
+    border: 1px solid var(--blue-color);
+    padding: 10px;
+    text-align: center;
+    border-radius: 20px 20px 0px 0;
+    background-color: var(--blue-color);
+    color: var(--white-color);
+}
+
+.main-item_list{
+    border: 1px solid var(--blue-color);
+    display: flex;
+    flex-direction: column;
+
+    padding: 15px;
+    border-radius: 0 0 20px 20px;
+    background-color: var(--white-color);
+    font-weight: 500;
+}
+
+.main-item_list-a:hover{
+    text-decoration: underline;
+}
+
+.main-item_list-a:not(:last-child) {
+    padding-bottom: 10px;
+}
+
+
+/* --- REQUEST --- */
+
+
+.request{
+    margin-top: 30px;
+    margin-bottom: 100px;
+}
+
+
+.pages-header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+/*  */
+.backto{
+    border: 1px solid;
+    padding: 10px;
+    border-radius: 15px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.backto:hover{
+    color: var(--white-color);
+    background-color: var(--blue-color);
+}
+
+.request-header_title{
+    font-weight: 600;
+}
+
+.search-input{
+    width: 500px;
+    height: 30px;
+    border-radius: 15px;
+    border: 1px solid var(--blue-color);
+    padding: 15px;
+}
+
+.search-btn{
+    background-color: var(--blue-color);
+    color: var(--white-color);
+    border-radius: 15px;
+    border: 1px solid var(--blue-color);
+    height: 30px;
+    padding: 0px 10px
+}
+
+.request-table{
+    margin-top: 30px;
+}
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+table, th, td {
+    border: none;
+}
+
+th, td {
+    padding: 8px;
+    text-align: left;
+}
+
+tr:not(:last-child){
+    border-bottom: 1px solid black;
+}
+
+th:not(:last-child), td:not(:last-child){
+    border-right: 1px solid black;
+}
+
+.filter{
+    /* display: flex; */
+    gap: 30px;
+}
+
+.filter-item{
+  border: none;
+}
+
+
+/* --- CONTRACT --- */
+
+.file{
+    display: block;
+    border: 1px solid;
+    padding: 10px;
+    border-radius: 15px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.file:hover{
+    background-color: var(--blue-color);
+    color: var(--white-color);
+}
+
+.contract_items{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+/*  */
+
+.backtoback{
+    margin-left: 10px;
+}
+
+.backtoback:hover{
+    text-decoration: underline;
+}
+
+
+.requestItems{
+    display: flex;
+}
+
+.contract-number{
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+
+.requestItem-left{
+    margin-top: 20px;
+    width: 50%;
+    border-right: 1px solid var(--blue-color);
+    padding-right: 30px;
+}
+
+.form-item{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10px;
+}
+
+.form-item:last-child{
+    margin-bottom: 20px;
+}
+
+.form-item label{
+    padding-left: 10px;
+    margin-bottom: 5px;
+}
+
+.form-input{
+    /* width: ; */
+    border-radius: 15px;
+    border: 1px solid var(--blue-color);
+    padding: 5px 15px;
+}
+
+.form-btns{
+    display: flex;
+    justify-content: space-between;
+}
+
+.form-btn {
+    background-color: var(--white-color);
+    border-radius: 15px;
+    border: 1px solid var(--blue-color);
+    height: 30px;
+    padding: 0px 30px;
+    cursor: pointer;
+}
+
+.blue-btn{
+    background-color: var(--blue-color);
+    color: var(--white-color);
+}
+
+.form-input-long{
+    height: 50px;
+    border-radius: 15px;
+    border: 1px solid var(--blue-color);
+    padding: 5px 15px;
+}
+
+.comment{
+    margin: 20px 0px;
+}
+
+.requestItem-right{
+    margin-top: 20px;
+    width: 50%;
+}
+
+.aligh-center{
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.requestItem-right{
+    margin-left: 30px;
+}
+
+.preview{
+    border: 1px solid var(--blue-color);
+    height: 550px;
+    margin-bottom: 30px;
+}
+
+.abitItem {
+    margin-top: 30px;
+}
+
+.abit{
+    margin-bottom: 100px;
+}
+
+.reg-title{
+    margin-top: 30px;
+}
+
+.reg-form{
+    display: flex;
+    flex-direction: column;
+    border: 2px solid var(--blue-color);
+    padding: 30px;
+    border-radius: 15px;
+}
+
+.registration{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.reg-btn{
+    font-weight: bold;
+    font-size: 16px;
+    margin-top: 10px;
+    /* padding: 10px; */
+}
+
+.reg-link{
+    margin-top: 10px;
+}
+
+/* -------------- status page -------------- */
+
+.send-status{
+    border: 1px solid var(--blue-color);
+    border-radius: 15px;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+.status-text{
+    font-weight: 500;
+}
+
+.bold-text{
+    font-weight: 600;
+}
+
+.status-file{
+    margin-top: 30px;
+}
+
+.check-btn{
+    border: none;
+    background-color: none;
+    cursor: pointer;
+    border: 1px solid var(--blue-color);
+    padding: 2px 5px;
+    border-radius: 10px;
+}
+
+.filter-link{
+    margin-left: 10px;
+}
+
+
+/* ------------------------------- */
+
+.form-status{
+    display: flex;
+    /* flex-direction: column; */
+    justify-content: space-between;
+}
+
+.file-btn{
+    background-color: var(--white-color);
+    border-radius: 15px;
+    border: 1px solid var(--blue-color);
+    /* height: 30px; */
+    padding: 0px 30px;
+    cursor: pointer;
+}
+
+/* ------------------------------- */
+
+.input-file {
+	position: relative;
+	display: inline-block;
+}
+.input-file span {
+	position: relative;
+	display: inline-block;
+	cursor: pointer;
+	outline: none;
+	text-decoration: none;
+	font-size: 14px;
+	vertical-align: middle;
+	color: rgb(255 255 255);
+	text-align: center;
+	border-radius: 15px;
+	background-color: var(--blue-color);
+	line-height: 22px;
+	height: 40px;
+	padding: 10px 20px;
+	box-sizing: border-box;
+	border: none;
+	margin: 0;
+	transition: background-color 0.2s;
+}
+.input-file input[type=file] {
+	position: absolute;
+	z-index: -1;
+	opacity: 0;
+	display: block;
+	width: 0;
+	height: 0;
+}
+ 
+/* Focus */
+.input-file input[type=file]:focus + span {
+	/* box-shadow: 0 0 0 0.2rem rgba(0,123,255,.25); */
+}
+ 
+/* Hover/active */
+.input-file:hover span {
+	background-color: var(--blue-color);
+}
+.input-file:active span {
+	background-color: var(--blue-color);
+}
+ 
+/* Disabled */
+.input-file input[type=file]:disabled + span {
+	background-color: #eee;
+}
+
+/* ------------------ */
+
+.info{
+    margin-bottom: 20px;
+}
+
+.abit-img img{
+    width: 100%;
+    object-fit: cover;
+    margin-bottom: 30px;
+}
+
+.form-request{
+    margin-bottom: 20px;
+}
+
+.textarea{
+    width: 100%;
+    resize: none;
+    border-radius: 15px;
+    border: 1px solid var(--blue-color);
+    padding: 5px;
+    margin-bottom: 10px;
+}
+
+.big-margin{
+    margin-bottom: 30px;
+}
+/* ------------------ */
+
+.input-file-pay {
+	position: relative;
+	display: inline-block;
+}
+
+.input-file-pay span {
+	position: relative;
+	display: inline-block;
+	cursor: pointer;
+	outline: none;
+	text-decoration: none;
+	font-size: 14px;
+	vertical-align: middle;
+	color: rgb(255 255 255);
+	text-align: center;
+	border-radius: 15px;
+	background-color: var(--blue-color);
+	line-height: 22px;
+	/* height: 40px; */
+    width: 150px;
+	padding: 0px 20px;
+	box-sizing: border-box;
+	border: none;
+	margin: 0;
+	transition: background-color 0.2s;
+}
+
+.input-file-pay input[type=file] {
+	position: absolute;
+	z-index: -1;
+	opacity: 0;
+	display: block;
+	width: 0;
+	height: 0;
+}
+
+/* Focus */
+.input-file-pay input[type=file]:focus + span {
+	/* box-shadow: 0 0 0 0.2rem rgba(0,123,255,.25); */
+}
+ 
+/* Hover/active */
+.input-file-pay:hover span {
+	background-color: var(--blue-color);
+}
+.input-file-pay:active span {
+	background-color: var(--blue-color);
+}
+ 
+/* Disabled */
+.input-file-pay input[type=file]:disabled + span {
+	background-color: #eee;
+}
+
+
+@media(max-width: 1024px) {
+    .container{
+        max-width: 700px;
+        padding: 0px 30px;
+    }
+
+    .header-title{
+        font-size: 16px;
+    }
+
+    .header-up{
+        align-items: flex-start;
+    }
+
+    .header-header{
+        display: block;
+    }
+
+    .header-logo{
+        border: none;
+    }
+
+    .header-title{
+        margin-left: 0px;
+        margin-top: 10px;
+    }
+
+    .header-name{
+        font-size: 18px;
+    }
+
+    .requestItems{
+        display: flex;
+    }
+
+    .requestItem-left{
+        width: 100%;
+        border: none;
+    }
+
+    .info{
+        font-size: 22px;
+    }
+
+    .form-btn {
+        margin-top: 10px;
+    }
+
+    .requestItem-right{
+        width: 100%;
+        margin-left: 0px;
+    }
+}
